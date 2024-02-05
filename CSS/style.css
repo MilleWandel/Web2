@@ -1,0 +1,426 @@
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 2em;
+  color: black;
+}
+
+nav {
+  text-align: right;
+}
+
+.logo{
+  font-size: 60px;
+border-bottom: 1px solid blue;
+}
+
+.heart{
+  max-width: 3%;
+  position: absolute;
+  left:83.5%;
+  top: 7.5%;
+}
+
+.bag{
+  max-width: 5.5%;
+  position: absolute;
+  left: 87%;
+  top: 7%;
+}
+
+.search{
+  max-width: 30%;
+  position: absolute;
+  left:29% ;
+  top: 6%;
+}
+
+
+/* PRODUKT */
+
+.card {
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 10px;
+  width: 600px;
+}
+
+.grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3%;
+    margin-top: 3%;
+  }
+  
+  .grid1_2{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-left: 4%;
+  }
+
+  .nike{
+    margin-left: 4%;
+    margin-top: -5%;
+  }
+
+  .burger-menu {
+    display: inline-block;
+}
+
+.toggle-box {
+    background-color: white;
+    color: #333;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu li {
+  text-align: center;
+  border: 1px solid black; 
+  margin: 3px 0; 
+}
+
+.menu.show {
+  display: block;
+}
+
+/* PRODUKTLISTE */
+
+.card1 {
+    border: 1px solid white;
+    width: 300px;
+  }
+
+img{
+    max-width: 90%;
+    align-items: center;
+}
+
+.smallProduct{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3%;
+    gap: 4%;
+    margin-bottom: 4%;
+    margin-left: 5%;
+}
+
+article a{
+    text-decoration: none;
+    color: black;
+}
+
+.mærke{
+    opacity: 30%;
+    font-size: 80%;
+}
+
+a:hover{
+    color: grey;
+}
+
+.soldout {
+  position: relative;
+  display: inline-block;
+}
+
+.soldout::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  border: 1px solid lightgray; 
+  background-color: lightgrey;
+  opacity: 45%;
+  box-sizing: border-box;
+}
+
+.SO{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  border: 15px solid grey;
+  background-color: grey;
+  width: 8%;
+}
+
+.SO1{
+  position: absolute;
+  left: 40.7%;
+  top: 714px;
+}
+
+.SO1{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  border: 15px solid grey;
+  background-color: grey;
+  width: 8%;
+}
+
+.SO{
+  position: absolute;
+  left: 15%;
+  top: 191px;
+}
+
+.rabat{
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  border: 5px solid red;
+  background-color: red;
+  width: 2%;
+}
+
+.rabat{
+  position: absolute;
+  left: 82%;
+  top: 600px;
+}
+
+/* KATEGORI */
+
+.brandList ol{
+  list-style-type: none;
+}
+
+.brandList li{
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  padding: 1rem;
+}
+
+.brandList a{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.brandList li::after{
+  display: block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  transition: all 0.3s;
+  }
+  
+
+.brandList li:hover{
+  background: #d8d8d8;
+  transition: 0.3s;
+  width: 1128px;
+  height: 25px;
+}
+
+
+@media (max-width: 800px){
+
+  nav a {
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+  }
+  
+  nav {
+    text-align: center;
+    margin-top: 3%;
+  }
+
+.grid3_3{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1%;
+    gap: 1%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    margin-left: 20%;
+}
+
+.brandList li:hover{
+  background: #d8d8d8;
+  transition: 0.3s;
+  width: 340px;
+  height: 25px;
+}
+
+.logo{
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.heart{
+  max-width: 5.5%;
+  position: absolute;
+  left:83.5%;
+  top: 6.2%;
+}
+
+.bag{
+  max-width: 9%;
+  position: absolute;
+  left: 90%;
+  top: 6%;
+}
+
+.search{
+  max-width: 40%;
+  position: absolute;
+  left: 45% ;
+  top: 6.5%;
+}
+
+.SO{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  border: 15px solid grey;
+  background-color: grey;
+  width: 20%;
+}
+
+.SO1{
+  position: absolute;
+  left: 21%;
+  top: 2165px;
+}
+
+.SO1{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  border: 15px solid grey;
+  background-color: grey;
+  width: 20%;
+}
+
+.SO{
+  position: absolute;
+  left: 21%;
+  top: 155px;
+}
+
+.rabat{
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  border: 5px solid red;
+  background-color: red;
+  width: 8%;
+}
+
+.rabat{
+  position: absolute;
+  left: 71%;
+  top: 1570px;
+}
+
+
+.h1_produkt{
+  font-size: 15px;
+}
+
+
+.card {
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 10px;
+  width: 400px;
+}
+
+.grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3%;
+    margin-top: 3%;
+  }
+  
+  .grid1_2{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-left: 4%;
+  }
+
+  .burger-menu {
+    display: inline-block;
+}
+
+.toggle-box {
+    background-color: white;
+    color: #333;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    width: 40%;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu li {
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu li {
+  text-align: center;
+  border: 1px solid black; 
+  margin: 3px 0; 
+}
+
+.menu.show {
+  display: block;
+}
+
+}
